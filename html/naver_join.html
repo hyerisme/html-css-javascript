@@ -26,19 +26,23 @@
                                 <h3 class="join_title">
                                     <label for="id">아이디</label>
                                 </h3>
-                                <input type="text" class="long_text" name="" id="id">
+                                <input type="text" class="long_text" name="" id="id" required>
+                                <span class="text_required">필수 항목입니다.</span>
+                                <span class="idCheck_false">이미 존재하는 아이디입니다.</span>
                             </div>
                             <div class="join_row">
                                 <h3 class="join_title">
                                     <label for="password">비밀번호</label>
                                 </h3>
                                 <input type="password" class="long_text" name="" id="password">
+                                <span class="text_required">필수 항목입니다.</span>
                             </div>
                             <div class="join_row">
                                 <h3 class="join_title">
                                     <label for="repassword">비밀번호 확인</label>
                                 </h3>
-                                <input type="password" class="long_text" name="" id="repassword">
+                                <input type="password" class="long_text" name="" id="repassword" required>
+                                <span class="text_required">필수 항목입니다.</span>
                             </div>
                         </div>
                         <div class="row_group">
@@ -47,6 +51,7 @@
                                     <label for="name">이름</label>
                                 </h3>
                                 <input type="text" class="long_text" name="" id="name">
+                                <span class="text_required">필수 항목입니다.</span>
                             </div>
                             <div class="join_row">
                                 <h3 class="join_title">
@@ -68,9 +73,10 @@
                                         <option value="10">10</option>
                                         <option value="11">11</option>
                                         <option value="12">12</option>
-                                    <input type="text" class="short_text" name="" placeholder="일">
+                                        <input type="text" class="short_text" name="" placeholder="일">
+                                    </div>
                                 </div>
-                            </div>
+                                <span class="text_required">필수 항목입니다.</span>
                             <div class="join_row">
                                 <h3 class="join_title">
                                     <label for="gender">성별</label>
@@ -81,6 +87,7 @@
                                     <option value="2">여자</option>
                                     <option value="3">선택안함</option>
                                 </select>
+                                <span class="text_required">필수 항목입니다.</span>
                             </div>
                             <div class="join_row">
                                 <h3 class="join_title">
@@ -740,6 +747,7 @@
                                     <input type="tel" class="middle_text" name="" placeholder="전화번호 입력">
                                     <button type="button" class="short_text">인증번호 받기</button>
                                 </div>
+                                <span class="text_required">필수 항목입니다.</span>
                                 <input type="text" class="long_text" name="" placeholder="인증번호를 입력하세요" readonly>
                                 <div class="join_row">
                                     <button type="button" class="join_submit">가입하기</button>
@@ -766,5 +774,7 @@
             <span>All Rights Reserved.</span>
         </address>
     </footer>
+    <script src = "js/naver_join.js"></script>
+    <script src="js/passwordCheck.js"></script>
 </body>
 </html>
